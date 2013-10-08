@@ -20,7 +20,7 @@ Commit下分为三大部分：
     * 展示代码上交的详细信息：
 
 	| Left        |  含义                    | right                 |  含义                    |
-	|-------------| -------------------------|-----------------------|--------------------------|
+	|-------------|--------------------------|-----------------------|--------------------------|
 	| Status 	  |	 代码的状态				 | Edit Commit           |  编辑提交项目            |
 	| Auditors    |  代码的审核者            | Edit Maniphtest Tasks |  修改自己所属的任务      |  
 	| Committed   |  代码上传的时间          | Download Raw Diff     |  下载源代码              |  
@@ -28,7 +28,7 @@ Commit下分为三大部分：
 	| Parents     |  简述代码的功能          | Aword Token           |  表情标签（可增加可撤销）| 
 	| Branches	  |  代码所属那个项目的分支	 |					     |  						|
 	| Tags        |  代码的标签              |                       |  						|
-	| Projuects   |  代码所属的项目          |                 
+	| Projects    |  代码所属的项目          |                       |                          |
 	                  
 ![firstone](./assets/firstone.png)
 
@@ -44,10 +44,29 @@ Commit下分为三大部分：
 
 
 ## 任务管理(Task Management)
-1. 用户登录Phabrcator 点击Maniphest进去；
-2. 
-
-
+* 用户登录Phabrcator 点击Maniphest进去。
+ 
 ![Maniphest](./assets/Maniphest.png)
 
+* 用户将看到一个灰色框和一个白色框，用户可以根据自己的需求而在灰色框选择或搜索。
+
+![huise](./assets/huise.png)
+
+* 白色框表示你当前的任务。
+
+![renwu](./assets/renwu.png)
+
+*选择其中一个任务进去。
+*在右侧会出现
+
+![renwuone](./assets/renwuone.png)
+
+* Edit Task属性表示编辑任务，Merge Duplicates IN属性表示先完成上一级的任务，才可以完成下一个任务。Create Subtask属性表示新建一个子任务，子任务的情况可在Priority属性设置轻重缓急，Edit Dependencies的属性为继承关系，Edit Differential Revisions属性为任务的异议， Flag For Later属性为一个提醒标签，Award Token属性为表情评价。
+
+* 最下边有一个Weigh in
+
+![renwutwo](./assets/renwutwo.png)
+
+* Ation属性里边描述的是任务的状态。
 ## Bug管理(Bug Tracking)
+* Bug管理其实就是一个任务，当代码中出现BUG时，管理者可把BUG上传到Audit,让所有的user来讨论，然后指点最适合的那个User去完成这个任务。
