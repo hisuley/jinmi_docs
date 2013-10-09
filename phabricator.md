@@ -22,7 +22,7 @@ Commit下分为三大部分：
 	| Left        |  含义                    | right                 |  含义                    |
 	|-------------|--------------------------|-----------------------|--------------------------|
 	| Status 	  |	 代码的状态				 | Edit Commit           |  编辑提交项目            |
-	| Auditors    |  代码的审核者            | Edit Maniphtest Tasks |  修改自己所属的任务      |  
+	| Auditors    |  代码的审核者            | Edit Maniphtest Tasks |  管理自己所属的任务      |  
 	| Committed   |  代码上传的时间          | Download Raw Diff     |  下载源代码              |  
 	| Author      |  代码作者                | Remove Red Flag       |  提醒自己的标签          |
 	| Parents     |  简述代码的功能          | Aword Token           |  表情标签（可增加可撤销）| 
@@ -33,6 +33,18 @@ Commit下分为三大部分：
 ![firstone](./assets/firstone.png)
 
 ![firsttwo](./assets/firsttwo.png)
+   
+   *点击Edit Commit,将会出现这个画面。
+
+![Editcommit](./assets/Editcommit) 
+
+   *其主要作用是提交的代码块是所属哪个项目或修改其所属项目。
+
+   *点击Edit Maniphtest Tasks，将会出现这个画面。
+
+![Editmaniphtesttsks](./assets/Editmaniphtesttasks)
+
+   *其主要作用是管理任务。
 
    * 展示跟新前跟跟新后代码块的变化，右侧有个拉列表 View Options 其主要作用是，审查者根据自己的需求来展示代码。
 
@@ -61,12 +73,15 @@ Commit下分为三大部分：
 
 ![renwuone](./assets/renwuone.png)
 
-* Edit Task属性表示编辑任务，Merge Duplicates IN属性表示先完成上一级的任务，才可以完成下一个任务。Create Subtask属性表示新建一个子任务，子任务的情况可在Priority属性设置轻重缓急，Edit Dependencies的属性为继承关系，Edit Differential Revisions属性为任务的异议， Flag For Later属性为一个提醒标签，Award Token属性为表情评价。
+* Edit Task属性表示编辑任务，Merge Duplicates IN属性表示把一个或两个任务合并在一起。Create
+Subtask属性表示新建一个子任务，子任务的情况可在Priority属性设置轻重缓急，Edit Dependencies的属性为继承关系，Edit Differential Revisions属性修正任务BUG的标签， Flag For Later属性为一个提醒标签，Award Token属性为表情评价。
 
 * 最下边有一个Weigh in
 
 ![renwutwo](./assets/renwutwo.png)
 
 * Ation属性里边描述的是任务的状态。
+* 你可以在Comment里边发表自己的评论。 
 ## Bug管理(Bug Tracking)
 * Bug管理其实就是一个任务，当代码中出现BUG时，管理者可把BUG上传到Audit,让所有的user来讨论，然后指点最适合的那个User去完成这个任务。
+
