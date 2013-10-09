@@ -6,18 +6,20 @@
 
 * Author把写好的代码上传到GitHub，然后git自动同步到Phabricator;
 
-* 审核者登录Phabricator, 看到Audit图标右侧有两个数字，左边在蓝色圆框的表示有问题的commit，
-右边那个数字则表示待审核的commit;
+* 审核者登录Phabricator, 看到Audit图标右侧有两个数字，左边在蓝色圆框的表示有问题的代码块，未审核前就引发了
+审核者的担忧，右边那个数字则表示待审核的commit;
 
 ![Audit](./assets/Audit.png)
 
-* 点击Audit进去，左边灰色栏为筛选器，看见有Problem Commits和Required Audits 这两个标题。Problem Commits 标题下的commit表示有问题的Commit，未审查前就已经Raised Concern。Required Audits标题下表示待审核的commit;
+* 点击Audit进去，左边灰色栏为筛选器，看见有Problem Commits和Required Audits 这两个标题。
 
 * 点击Problem Commits下或Required Audits下的 commit，审核者就可以看到跟新前跟跟新后代码的变化。
 Commit下分为四个模块：
 
 
-    * 第一个模块为列出代码上交的详细信息：
+第一个模块为列出代码上交的详细信息：
+
+* 列表如下：
 
 	| Left        |  含义                    | right                 |  含义                    |
 	|-------------|--------------------------|-----------------------|--------------------------|
@@ -48,25 +50,35 @@ Commit下分为四个模块：
    * 其中Assighed to Me属性表示列出我的任务，Created By Me的属性为列出我创建的任务，All Open Tasks属性为列出我
    未完成的所有任务，All Tasks属性为列出所有的任务。
 
-   * 第二个模块包含两个部分，第一部分为User对代码块的评论，第二部分为列出代码块具体被修改的信息和他的历史信息。
+第二个模块包含两个部分，第一部分为User对代码块的评论，第二部分为列出代码块具体被修改的信息和他的历史信息。
 
 ![Two](./assets/two.png)
 
-   * 第三个模块为展示被修改文件里代码跟新前跟跟新后代码块的变化。
+第三个模块为展示被修改文件里代码跟新前跟跟新后代码块的变化。
 
 ![Three](./assets/three.png)
 
    * 其中左边表示未跟新前的原代码，右边为跟新后的代码。
-   * 右侧有个拉列表 View Options 其主要作用是，审查者根据自己的需求来展示代码。
+   颜色不同的地方就是修改前跟修改后的行，加深颜色为修改的部分。
+   * 右侧有个拉列表 View Options。
 
 ![ViewOption](./assets/ViewOption.png)
-   
-   * 在最下边有个Creative Accounting, 审核者在审查代码完之后可在这发表自己的观点。
+
+   * Collapse File属性， 表示打开或关闭被修改的文件；Browse in Diffusion属性，表示在新的窗口打开源文件；
+   View Standalone属性，表示异常处理，即不符合原本制定的规则。Show Row File属性，表示打开未改动前的源文件；
+   Configure Editor属性，表示配置编辑器。
+
+第四个模块可视为评论模块，
+   在最下边有个Creative Accounting, 审核者在审查代码完之后可在这发表自己的观点。
 
 ![comment](./assets/comment.png)
 
+   * Action 有Comment属性，表示评论；Add CCs属性，表示抄送；Add Auditors属性，表示增加审核者；Accept Commit属性，表示审核通过；
+   Raise Concern属性，表示担忧代码改动后可能引起的不良后果。
+
 
 ## 任务管理(Task Management)
+
 * 用户登录Phabrcator 点击Maniphest进去。
  
 ![Maniphest](./assets/Maniphest.png)
