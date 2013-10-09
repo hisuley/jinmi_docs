@@ -14,10 +14,10 @@
 * 点击Audit进去，左边灰色栏为筛选器，看见有Problem Commits和Required Audits 这两个标题。Problem Commits 标题下的commit表示有问题的Commit，未审查前就已经Raised Concern。Required Audits标题下表示待审核的commit;
 
 * 点击Problem Commits下或Required Audits下的 commit，审核者就可以看到跟新前跟跟新后代码的变化。
-Commit下分为三大部分：
+Commit下分为四个模块：
 
 
-    * 展示代码上交的详细信息：
+    * 第一个模块为列出代码上交的详细信息：
 
 	| Left        |  含义                    | right                 |  含义                    |
 	|-------------|--------------------------|-----------------------|--------------------------|
@@ -34,19 +34,30 @@ Commit下分为三大部分：
 
 ![firsttwo](./assets/firsttwo.png)
    
-   *点击Edit Commit,将会出现这个画面。
+   * 点击Edit Commit,将会出现这个画面。
 
-![Editcommit](./assets/Editcommit) 
+![Editcommit](./assets/Editcommit.png) 
 
-   *其主要作用是提交的代码块是所属哪个项目或修改其所属项目。
+   * 其主要作用是提交的代码块是所属哪个项目或修改其所属项目。
 
-   *点击Edit Maniphtest Tasks，将会出现这个画面。
+   * 点击Edit Maniphtest Tasks，将会出现这个画面。
 
-![Editmaniphtesttsks](./assets/Editmaniphtesttasks)
+![Editmaniphesttsks](./assets/Editmaniphesttsks.png)
 
-   *其主要作用是管理任务。
+   * 其主要作用是管理任务。
+   * 其中Assighed to Me属性表示列出我的任务，Created By Me的属性为列出我创建的任务，All Open Tasks属性为列出我
+   未完成的所有任务，All Tasks属性为列出所有的任务。
 
-   * 展示跟新前跟跟新后代码块的变化，右侧有个拉列表 View Options 其主要作用是，审查者根据自己的需求来展示代码。
+   * 第二个模块包含两个部分，第一部分为User对代码块的评论，第二部分为列出代码块具体被修改的信息和他的历史信息。
+
+![Two](./assets/two.png)
+
+   * 第三个模块为展示被修改文件里代码跟新前跟跟新后代码块的变化。
+
+![Three](./assets/three.png)
+
+   * 其中左边表示未跟新前的原代码，右边为跟新后的代码。
+   * 右侧有个拉列表 View Options 其主要作用是，审查者根据自己的需求来展示代码。
 
 ![ViewOption](./assets/ViewOption.png)
    
