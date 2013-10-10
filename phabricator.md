@@ -92,23 +92,38 @@ Commit下分为四个模块：
 
 ![renwu](./assets/renwu.png)
 
-*选择其中一个任务进去。
-*在右侧会出现
+ 选择其中一个任务进去。
+在右侧会出现
 
 ![renwuone](./assets/renwuone.png)
 
-* Edit Task属性表示编辑任务，Merge Duplicates IN属性表示把一个或两个任务合并在一起。Create
-Subtask属性表示新建一个子任务，子任务的情况可在Priority属性设置轻重缓急，Edit Dependencies的属性为继承关系，Edit Differential Revisions属性修正任务BUG的标签， Flag For Later属性为一个提醒标签，Award Token属性为表情评价。
+ Edit Task属性表示编辑任务，Merge Duplicates IN属性表示把一个或两个任务合并在一起。Create
+Subtask属性表示新建一个子任务，子任务的情况可在Priority属性设置轻重缓急，Edit Dependencies的属性为继承关系，Edit Differential Revisions属性修正任务BUG的标签， Flag For Later属性为一个提醒标签，Award Token属性为表情评价。Subsxribe属性表示是否有用户
 
-*点击Edit Task将看到
+ 点击Edit Task将看到:
 
 ![Edittask](./assets/Edittask.png)
 
-* 其中Title的属性为题目；Status的属性为任务的状态；Assigned To
+ 其中Title的属性为题目；Status的属性为任务的状态；Assigned To
 属性为给某个User分配任务；CC为项目的创建者；Priority的属性为任务级别的状态；
 Visible To的属性为可见的，意思是说谁能看见的这个任务的；Editable By的属性为任务是来自哪个项目编辑的；Projects的属性为此任务来自哪个项目的；Description的属性为描述任务要求的。
 
-*
+点击Create Subtask将看到
+
+![Createsubtask](./assets/Createsubtask.png)
+
+其中Parent Task表示来自哪个任务的分支；Title的属性为题目；Assigned TO 的属性为分配User去完成；CC为任务的审核者；
+   Priority的属性为 任务的级别 可分为 Unbreak Now!,Need Triage,High,Normal,Low,Wishlist；Visible To 为任务的可见度；
+   Editable By的属性为指定审核者；Projects的属性为此任务来自哪个项目；Description的属性为任务的描述。
+
+点击Edit Dependencires进去，将看到
+
+![EditDependencires](./assets/EditDependencires.png)
+
+
+中间部分为审核者对此任务的评论。
+
+![four](./assets/four.png)
 
 * 最下边有一个Weigh in
  
