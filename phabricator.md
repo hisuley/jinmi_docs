@@ -13,9 +13,9 @@
 
 * 点击Audit进去，左边灰色栏为筛选器，看见有Problem Commits和Required Audits 这两个标题。
 
-* 点击Problem Commits下或Required Audits下的 commit，审核者就可以看到跟新前跟跟新后代码的变化。
-Commit下分为四个模块：
+* 点击Problem Commits下或Required Audits下的 commit，审核者就可以看到更新前跟更新后代码的变化。
 
+Commit下分为四个模块：
 
 第一个模块为列出代码上交的详细信息：
 
@@ -23,13 +23,13 @@ Commit下分为四个模块：
 
 	| Left        |  含义                    | right                 |  含义                    |
 	|-------------|--------------------------|-----------------------|--------------------------|
-	| Status 	  |	 代码的状态				 | Edit Commit           |  编辑提交项目            |
+	| Status 	  |  代码的状态				  | Edit Commit           |  编辑提交项目            |
 	| Auditors    |  代码的审核者            | Edit Maniphtest Tasks |  管理自己所属的任务      |  
 	| Committed   |  代码上传的时间          | Download Raw Diff     |  下载源代码              |  
 	| Author      |  代码作者                | Remove Red Flag       |  提醒自己的标签          |
 	| Parents     |  简述代码的功能          | Aword Token           |  表情标签（可增加可撤销）| 
-	| Branches	  |  代码所属那个项目的分支	 |					     |  						|
-	| Tags        |  代码的标签              |                       |  						|
+	| Branches	  |  代码所属那个项目的分支  |					        |  						        |
+	| Tags        |  代码的标签              |                       |  						        |
 	| Projects    |  代码所属的项目          |                       |                          |
 	                  
 ![firstone](./assets/firstone.png)
@@ -54,12 +54,13 @@ Commit下分为四个模块：
 
 ![Two](./assets/two.png)
 
-第三个模块为展示被修改文件里代码跟新前跟跟新后代码块的变化。
+第三个模块为展示被修改文件里代码更新前跟更新后代码块的变化。
 
 ![Three](./assets/three.png)
 
-   * 其中左边表示未跟新前的原代码，右边为跟新后的代码。
+   * 其中左边表示未更新前的原代码，右边为更新后的代码。
    颜色不同的地方就是修改前跟修改后的行，加深颜色为修改的部分。
+  
    * 右侧有个拉列表 View Options。
 
 ![ViewOption](./assets/ViewOption.png)
@@ -99,12 +100,21 @@ Commit下分为四个模块：
 * Edit Task属性表示编辑任务，Merge Duplicates IN属性表示把一个或两个任务合并在一起。Create
 Subtask属性表示新建一个子任务，子任务的情况可在Priority属性设置轻重缓急，Edit Dependencies的属性为继承关系，Edit Differential Revisions属性修正任务BUG的标签， Flag For Later属性为一个提醒标签，Award Token属性为表情评价。
 
-* 最下边有一个Weigh in
+*点击Edit Task将看到
 
+![Edittask](./assets/Edittask.png)
+
+*其中Title的属性为题目；Status的属性为任务的状态；Assigned To属性为给某个User分配任务；CC为项目的创建者；Priority的属性为任务级别的状态；
+Visible To的属性为可见的，意思是说谁能看见的这个任务的；Editable By的属性为任务是来自哪个项目编辑的；Projects的属性为此任务来自哪个项目的；Description的属性为描述任务要求的。
+
+* 最下边有一个Weigh in
+ 
 ![renwutwo](./assets/renwutwo.png)
 
 * Ation属性里边描述的是任务的状态。
+
 * 你可以在Comment里边发表自己的评论。 
 ## Bug管理(Bug Tracking)
+
 * Bug管理其实就是一个任务，当代码中出现BUG时，管理者可把BUG上传到Audit,让所有的user来讨论，然后指点最适合的那个User去完成这个任务。
 
