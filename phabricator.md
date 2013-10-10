@@ -28,7 +28,7 @@ Commit下分为四个模块：
 	| Committed   |  代码上传的时间          | Download Raw Diff     |  下载源代码              |  
 	| Author      |  代码作者                | Remove Red Flag       |  提醒自己的标签          |
 	| Parents     |  简述代码的功能          | Aword Token           |  表情标签（可增加可撤销）| 
-	| Branches	  |  代码所属那个项目的分支  |					        |  						        |
+	| Branches	  |  项目的分支的负责人      |					        |  						        |
 	| Tags        |  代码的标签              |                       |  						        |
 	| Projects    |  代码所属的项目          |                       |                          |
 	                  
@@ -104,8 +104,11 @@ Subtask属性表示新建一个子任务，子任务的情况可在Priority属�
 
 ![Edittask](./assets/Edittask.png)
 
-*其中Title的属性为题目；Status的属性为任务的状态；Assigned To属性为给某个User分配任务；CC为项目的创建者；Priority的属性为任务级别的状态；
+* 其中Title的属性为题目；Status的属性为任务的状态；Assigned To
+属性为给某个User分配任务；CC为项目的创建者；Priority的属性为任务级别的状态；
 Visible To的属性为可见的，意思是说谁能看见的这个任务的；Editable By的属性为任务是来自哪个项目编辑的；Projects的属性为此任务来自哪个项目的；Description的属性为描述任务要求的。
+
+*
 
 * 最下边有一个Weigh in
  
