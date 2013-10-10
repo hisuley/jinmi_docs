@@ -119,5 +119,7 @@ Visible To的属性为可见的，意思是说谁能看见的这个任务的；E
 * 你可以在Comment里边发表自己的评论。 
 ## Bug管理(Bug Tracking)
 
+* 当User发现Bug时
+
 * Bug管理其实就是一个任务，当代码中出现BUG时，管理者可把BUG上传到Audit,让所有的user来讨论，然后指点最适合的那个User去完成这个任务。
 
